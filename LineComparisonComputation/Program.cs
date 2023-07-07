@@ -30,7 +30,7 @@ namespace LineComparisonComputation
             double result2 = Math.Pow(Y2 - Y1, 2);
             double length1 = Math.Sqrt(result1 + result2);
             //Final result,
-            //Console.WriteLine("length of Line1: " + length1);
+            Console.WriteLine("length of Line1: " + length1);
 
 
             //LINE TWO co-ordinates are x1,x2,y1,y2
@@ -51,17 +51,20 @@ namespace LineComparisonComputation
             double result4 = Math.Pow(y2 - y1, 2);
             double length2 = Math.Sqrt(result3 + result4);
             //Final result,
-            //Console.WriteLine("length of Line2: " + length2);
+            Console.WriteLine("length of Line2: " + length2);
 
             if (length1 == length2)
             {
                 Console.WriteLine("Given Two Lines Are Equal");
             }
-            else
+            else if (length1 > length2)
             {
-                Console.WriteLine("Given Two Lines Are Not Equal");
+                Console.WriteLine("Line1 is greater than Line2");
             }
-
+            else  
+            {
+                Console.WriteLine("Line1 is less than Line2");
+            }            
         }
              
     }    
