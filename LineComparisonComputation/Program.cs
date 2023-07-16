@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace LineComparisonComputation
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
-        {   
+        {
             Console.WriteLine("Welcome To Line Comparison Computation");
+
             //LINE ONE co-ordinates are X1,X2,Y1,Y2
             //For X co-ordinates,
             Console.WriteLine(" Provide X coordinates of the Line1");
@@ -61,12 +62,12 @@ namespace LineComparisonComputation
             {
                 Console.WriteLine("Line1 is greater than Line2");
             }
-            else  
+            else
             {
                 Console.WriteLine("Line1 is less than Line2");
-            }            
+            }
         }
-             
-    }    
 
+    }
 }
+
